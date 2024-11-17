@@ -1,0 +1,430 @@
+<html><head><base href="/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crystal FN - Season 11 Private Server</title>
+
+<style>
+:root {
+  --background: #0a0a0a;
+  --surface: #111111;
+  --primary: #ffffff;
+  --secondary: #888888;
+  --accent: #00c8ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+nav {
+  background-color: var(--surface);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.crystal-logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.page-container {
+  animation: fadeIn 0.5s ease-out;
+  display: none;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  padding: 6rem 2rem 2rem;
+  min-height: 100vh;
+}
+
+.page-container.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.hero-section {
+  text-align: center;
+  padding: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: var(--secondary);
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: var(--accent);
+  color: var(--background);
+  padding: 0.8rem 2rem;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  animation: pulse 2s infinite;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.feature-card {
+  background-color: var(--surface);
+  padding: 1.5rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 200, 255, 0.3);
+}
+
+.feature-icon {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+/* Add to existing CSS */
+.download-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  gap: 4rem;
+}
+
+.download-content {
+  flex: 1;
+}
+
+.download-image {
+  flex: 1;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.2);
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.download-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.download-image:hover img {
+  transform: scale(1.02);
+}
+
+.download-features {
+  margin-top: 2rem;
+}
+
+.download-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.download-features li {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  color: var(--secondary);
+}
+
+.download-features li i {
+  color: var(--accent);
+  margin-right: 1rem;
+}
+
+.download-cta {
+  margin-top: 2rem;
+}
+
+.download-btn {
+  background: linear-gradient(135deg, var(--accent), #0099ff);
+  color: var(--background);
+  padding: 1rem 2.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 200, 255, 0.3);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px rgba(0, 200, 255, 0.2);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(0, 200, 255, 0.6);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 255, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(0, 200, 255, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(0, 200, 255, 0);
+  }
+}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+<nav>
+  <div class="crystal-logo">Crystal FN</div>
+  <div class="nav-links">
+    <a href="#home" class="nav-link active" data-page="home">Home</a>
+    <a href="#download" class="nav-link" data-page="download">Download</a>
+    <a href="#features" class="nav-link" data-page="features">Features</a>
+    <a href="#discord" class="nav-link" data-page="discord">Discord</a>
+  </div>
+</nav>
+
+<div id="home" class="page-container active">
+  <div class="hero-section">
+    <h1 class="hero-title">Welcome to Crystal FN</h1>
+    <p class="hero-subtitle">Experience Season 11 like never before</p>
+    <a href="#download" class="cta-button nav-link" data-page="download">Get Started</a>
+  </div>
+</div>
+
+<div id="download" class="page-container">
+  <div class="download-container">
+    <div class="download-content">
+      <h1 class="hero-title">Download Crystal FN</h1>
+      <p class="hero-subtitle">Experience the ultimate Season 11 private server</p>
+      
+      <div class="download-features">
+        <ul>
+          <li><i class="fas fa-check"></i> Easy to install launcher</li>
+          <li><i class="fas fa-check"></i> Instant access to Season 11</li>
+          <li><i class="fas fa-check"></i> Regular updates and support</li>
+          <li><i class="fas fa-check"></i> Active community</li>
+        </ul>
+      </div>
+      
+      <div class="download-cta">
+        <a href="https://cdn.discordapp.com/attachments/1306868696177967175/1307745564590477353/Crystal_Launcher.rar?ex=673b6c77&is=673a1af7&hm=2570ac2f2b3fd7e50dad94c13f2df71282ea0506e6474587650a62136511208d&" class="download-btn">
+          <i class="fas fa-download"></i>
+          Download Crystal Launcher
+        </a>
+      </div>
+    </div>
+    
+    <div class="download-image">
+      <img 
+        src="https://cdn.discordapp.com/attachments/1307556526462074973/1307780036719415520/image.png?ex=673b8c92&is=673a3b12&hm=e3ac4de3f6badf0d9ae91d91038daa50b80440153693e4a3696d067ef2295275&"
+        alt="Crystal FN Launcher Interface"
+        width="600"
+        height="400"
+      >
+    </div>
+  </div>
+</div>
+
+<div id="features" class="page-container">
+  <div class="hero-section">
+    <h1 class="hero-title">Features</h1>
+    <div class="features-grid">
+      <div class="feature-card">
+        <i class="fas fa-clock feature-icon"></i>
+        <h3>OG Fortnite</h3>
+        <p>Experience the classic Fortnite gameplay</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-gamepad feature-icon"></i>
+        <h3>Season X Content</h3>
+        <p>All Season 11 features available</p>
+      </div>
+      <div class="feature-card">
+        <i class="fas fa-users feature-icon"></i>
+        <h3>Active Community</h3>
+        <p>Join our growing player base</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="discord" class="page-container">
+  <div class="hero-section">
+    <h1 class="hero-title">Join Our Discord</h1>
+    <p class="hero-subtitle">Connect with the community</p>
+    <a href="https://discord.com/invite/1242668250026868737" class="cta-button">Join Discord</a>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const navLinks = document.querySelectorAll('.nav-link');
+    const downloadImage = document.querySelector('.download-image');
+    
+    function showPage(pageId) {
+        // Hide all pages
+        document.querySelectorAll('.page-container').forEach(page => {
+            page.classList.remove('active');
+        });
+        
+        // Show target page
+        const targetPage = document.getElementById(pageId);
+        if (targetPage) {
+            targetPage.classList.add('active');
+        }
+        
+        // Update active nav link
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('data-page') === pageId) {
+                link.classList.add('active');
+            }
+        });
+        
+        // Update URL hash without scrolling
+        history.pushState(null, null, `#${pageId}`);
+    }
+
+    // Handle navigation clicks
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            const pageId = this.getAttribute('data-page');
+            showPage(pageId);
+        });
+    });
+
+    // Handle initial load and back/forward navigation
+    function handleHash() {
+        const hash = window.location.hash.substring(1) || 'home';
+        showPage(hash);
+    }
+
+    // Add tilt effect to download image
+    if (downloadImage) {
+        downloadImage.addEventListener('mousemove', (e) => {
+            const rect = downloadImage.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const tiltX = ((y - centerY) / centerY) * -10;
+            const tiltY = ((x - centerX) / centerX) * 10;
+            
+            downloadImage.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`;
+        });
+
+        downloadImage.addEventListener('mouseleave', () => {
+            downloadImage.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
+        });
+    }
+
+    window.addEventListener('hashchange', handleHash);
+    handleHash(); // Handle initial load
+});
+</script>
+
+</body>
+</html>
