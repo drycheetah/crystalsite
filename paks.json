@@ -1,0 +1,82 @@
+[
+  {
+    "name": "pakchunk9000-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk9000-WindowsClient.pak",
+    "checksum": "98d6f38478233dd803a7e1b4f870faf9"
+  },
+  {
+    "name": "pakchunk9000-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk9000-WindowsClient.sig",
+    "checksum": "98d6f38478233dd803a7e1b4f870faf9"
+  },
+  {
+    "name": "pakchunk90001-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk90001-WindowsClient.pak",
+    "checksum": "5164a97cae890940e5087fb2ada682fb"
+  },
+  {
+    "name": "pakchunk90001-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk90001-WindowsClient.sig",
+    "checksum": "bf471bdfa99c7ba839bc235c0df6a424"
+  },
+  {
+    "name": "pakchunk9001-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk9001-WindowsClient.pak",
+    "checksum": "5164a97cae890940e5087fb2ada682fb"
+  },
+  {
+    "name": "pakchunk9001-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk9001-WindowsClient.sig",
+    "checksum": "bf471bdfa99c7ba839bc235c0df6a424"
+  },
+  {
+    "name": "pakchunkDeadpool-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunkDeadpool-WindowsClient.pak",
+    "checksum": "a0205c0b06d040a551e82c5ec8aa41a4"
+  },
+  {
+    "name": "pakchunkDeadpool-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunkDeadpool-WindowsClient.sig",
+    "checksum": "0d825db0a1559c1dad45aa9be627a46a"
+  },
+  {
+    "name": "pakchunkJerity_P.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunkJerity_P.pak",
+    "checksum": "37ca545e117934728a89d475edbd3161"
+  },
+  {
+    "name": "pakchunkJerity_P.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunkJerity_P.sig",
+    "checksum": "578d1ffbe2b9e1f10cbd528085766465"
+  },
+  {
+    "name": "pakchunkRetracBubble-WindowsClient_P.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunkRetracBubble-WindowsClient_P.pak",
+    "checksum": "c5ae8dde9ef62e21ab66f58fe9abe5c3"
+  },
+  {
+    "name": "pakchunkRetracBubble-WindowsClient_P.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunkRetracBubble-WindowsClient_P.sig",
+    "checksum": "7b7535d950395c41b2de49510f54b0b9"
+  },
+  {
+    "name": "z_FmodEmotes.pak",
+    "url": "https://corgi.loaf.st/fmod/z_FmodEmotes.pak",
+    "checksum": "36a79d489b9df2182d3196e16fe40a74"
+  },
+  {
+    "name": "z_FmodEmotes.sig",
+    "url": "https://corgi.loaf.st/fmod/z_FmodEmotes.sig",
+    "checksum": "d93a6289f52fa169d0d5128ac3ce1bb9"
+  },
+  {
+    "name": "z_pakchunkFModMusicPacks-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/z_pakchunkFModMusicPacks-WindowsClient.pak",
+    "checksum": "24fd714fd7aeb62fa5fce8253b7b05f5"
+  },
+  {
+    "name": "z_pakchunkFModMusicPacks-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/z_pakchunkFModMusicPacks-WindowsClient.sig",
+    "checksum": "578d1ffbe2b9e1f10cbd528085766465"
+  }
+]
