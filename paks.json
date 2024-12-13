@@ -1,5 +1,15 @@
 [
   {
+    "name": "pakchunk1010-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk1010-WindowsClient.pak",
+    "checksum": "56e0c3e38bcf77e69329e2869a5fdff9"
+  },
+  {
+    "name": "pakchunk1010-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk1010-WindowsClient.sig",
+    "checksum": "73edf02fafc14326361491602eb1d564"
+  },
+  {
     "name": "pakchunk9000-WindowsClient.pak",
     "url": "https://corgi.loaf.st/fmod/pakchunk9000-WindowsClient.pak",
     "checksum": "98d6f38478233dd803a7e1b4f870faf9"
@@ -28,16 +38,6 @@
     "name": "pakchunk9001-WindowsClient.sig",
     "url": "https://corgi.loaf.st/fmod/pakchunk9001-WindowsClient.sig",
     "checksum": "bf471bdfa99c7ba839bc235c0df6a424"
-  },
-  {
-    "name": "pakchunkDeadpool-WindowsClient.pak",
-    "url": "https://corgi.loaf.st/fmod/pakchunkDeadpool-WindowsClient.pak",
-    "checksum": "a0205c0b06d040a551e82c5ec8aa41a4"
-  },
-  {
-    "name": "pakchunkDeadpool-WindowsClient.sig",
-    "url": "https://corgi.loaf.st/fmod/pakchunkDeadpool-WindowsClient.sig",
-    "checksum": "0d825db0a1559c1dad45aa9be627a46a"
   },
   {
     "name": "pakchunkJerity_P.pak",
