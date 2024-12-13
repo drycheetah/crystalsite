@@ -1,8 +1,8 @@
 [
   {
     "name": "pakchunk1010-WindowsClient.pak",
-    "url": "https://corgi.loaf.st/fmod/pakchunk9000-WindowsClient.pak",
-    "checksum": "56e0c3e38bcf77e69329e2869a5fdff9"
+    "url": "https://corgi.loaf.st/fmod/pakchunk1010-WindowsClient.pak",
+    "checksum": "4ca87af83184565f4597bb65eef358a8"
   },
   {
     "name": "pakchunk1010-WindowsClient.sig",
@@ -48,6 +48,16 @@
     "name": "pakchunkJerity_P.sig",
     "url": "https://corgi.loaf.st/fmod/pakchunkJerity_P.sig",
     "checksum": "578d1ffbe2b9e1f10cbd528085766465"
+  },
+  {
+    "name": "pakchunkRetracBubble-WindowsClient_P.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunkRetracBubble-WindowsClient_P.pak",
+    "checksum": "c5ae8dde9ef62e21ab66f58fe9abe5c3"
+  },
+  {
+    "name": "pakchunkRetracBubble-WindowsClient_P.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunkRetracBubble-WindowsClient_P.sig",
+    "checksum": "7b7535d950395c41b2de49510f54b0b9"
   },
   {
     "name": "z_FmodEmotes.pak",
