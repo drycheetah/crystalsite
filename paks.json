@@ -50,16 +50,6 @@
     "checksum": "578d1ffbe2b9e1f10cbd528085766465"
   },
   {
-    "name": "pakchunkRetracBubble-WindowsClient_P.pak",
-    "url": "https://corgi.loaf.st/fmod/pakchunkRetracBubble-WindowsClient_P.pak",
-    "checksum": "c5ae8dde9ef62e21ab66f58fe9abe5c3"
-  },
-  {
-    "name": "pakchunkRetracBubble-WindowsClient_P.sig",
-    "url": "https://corgi.loaf.st/fmod/pakchunkRetracBubble-WindowsClient_P.sig",
-    "checksum": "7b7535d950395c41b2de49510f54b0b9"
-  },
-  {
     "name": "z_FmodEmotes.pak",
     "url": "https://corgi.loaf.st/fmod/z_FmodEmotes.pak",
     "checksum": "36a79d489b9df2182d3196e16fe40a74"
