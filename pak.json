@@ -1,0 +1,42 @@
+[
+  {
+    "name": "pakchunk1010-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk1010-WindowsClient.pak",
+    "checksum": "4ca87af83184565f4597bb65eef358a8"
+  },
+  {
+    "name": "pakchunk1010-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk1010-WindowsClient.sig",
+    "checksum": "73edf02fafc14326361491602eb1d564"
+  },
+  {
+    "name": "pakchunk9000-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk9000-WindowsClient.pak",
+    "checksum": "98d6f38478233dd803a7e1b4f870faf9"
+  },
+  {
+    "name": "pakchunk9000-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk9000-WindowsClient.sig",
+    "checksum": "98d6f38478233dd803a7e1b4f870faf9"
+  },
+  {
+    "name": "pakchunk90001-WindowsClient.pak",
+    "url": "https://corgi.loaf.st/fmod/pakchunk90001-WindowsClient.pak",
+    "checksum": "5164a97cae890940e5087fb2ada682fb"
+  },
+  {
+    "name": "pakchunk90001-WindowsClient.sig",
+    "url": "https://corgi.loaf.st/fmod/pakchunk90001-WindowsClient.sig",
+    "checksum": "bf471bdfa99c7ba839bc235c0df6a424"
+  },
+  {
+    "name": "z_FmodEmotes.pak",
+    "url": "https://corgi.loaf.st/fmod/z_FmodEmotes.pak",
+    "checksum": "36a79d489b9df2182d3196e16fe40a74"
+  },
+  {
+    "name": "z_FmodEmotes.sig",
+    "url": "https://corgi.loaf.st/fmod/z_FmodEmotes.sig",
+    "checksum": "d93a6289f52fa169d0d5128ac3ce1bb9"
+  }
+]
